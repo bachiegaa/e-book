@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de pagamento</title>
+
+    <style>
+        body {
+            font-family: arial;
+        }
+        </style>
+</head>
+<body>
+    <h1>Formulário de pagamento</h1>
+    <h2>Preencha seus dados</h2>
+
+    <form method="post" action="parabens.html">
+        <fieldset>
+            <legend>Dados do cliente</legend>
+            <label>Nome completo</label>
+            <input type="text" name="nome" placeholder="digite seu nome" required><br><br>
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="fulanodetal@gmail.com" required><br><br>
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+        </fieldset>
+
+        <fieldset> 
+            <legend>Forma de pagamento</legend>
+            <input type="radio" name="pagamento" id="cartao-de-credito" value="cartao-de-credito" checkede required />
+            <label for="cartao-de-credito">Cartão de Crédito</label><br>
+            <input type="radio" name="pagamento" id="pix" value="pix" />
+            <label for="pix">Pix</label>
+            <br><br>
+
+            <fieldset>
+                <legend>Dados do Cartão</legend>
+                <label>Número do cartão:</label>
+                <input type="text" name="n-do-cartao" placeholder="0000 0000 0000 0000" required><br><br>
+                <label>Data de expiração:</label>
+                <input type="month" name="data-de-venc" required><br><br>
+                <label>CVV:</label>
+                <input type="text" name="cvv" placeholder="123" required><br><br>
+            </fieldset>
+
+        </fieldset>
+        <br>
+        <button type="submit">Concluir compra</button>
+        <button type="submit"><a href="index.html">Cancelar</a></button>
+    </form>
+</body>
+</html>
